@@ -1,0 +1,137 @@
+.in-text {
+	font-size: 40px;
+	text-transform: uppercase;
+	margin: 25px auto 0 auto;
+	width: 680px;
+	height: 100px;
+	padding-left: 15px;
+	font-family: Arial;
+	font-weight: 375;
+	position: relative;
+}
+
+.in-text:before,
+.in-text:after {
+	content: " ";
+	display: table;
+}
+
+.in-text:after {
+	clear: both;
+}
+
+.in-text span {
+	cursor: default;
+	display: block;
+	float: left;
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	margin: 0 0 0 -20px;
+	color: rgba(255, 255, 255, 0.95);
+	text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.1);
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+}
+
+.in-text span:nth-child(odd) {
+	background: rgba(82, 82, 82, 0.8) url("https://i.imgur.com/yofAc6p.png");
+}
+
+.in-text span:nth-child(even) {
+	background: rgba(40, 40, 40, 0.8) url("https://i.imgur.com/yofAc6p.png");
+}
+
+.in-text span:nth-child(1) {
+	-webkit-transform: translate(300%) translate(-70px);
+	-moz-transform: translate(300%) translate(-70px);
+	-o-transform: translate(300%) translate(-70px);
+	-ms-transform: translate(300%) translate(-70px);
+	transform: translate(300%) translate(-70px);
+}
+
+.in-text span:nth-child(2) {
+	-webkit-transform: translate(200%) translate(-50px);
+	-moz-transform: translate(200%) translate(-50px);
+	-o-transform: translate(200%) translate(-50px);
+	-ms-transform: translate(200%) translate(-50px);
+	transform: translate(200%) translate(-50px);
+}
+
+.in-text span:nth-child(3) {
+	-webkit-transform: translate(100%) translate(-30px);
+	-moz-transform: translate(100%) translate(-30px);
+	-o-transform: translate(100%) translate(-30px);
+	-ms-transform: translate(100%) translate(-30px);
+	transform: translate(100%) translate(-30px);
+}
+
+.in-text span:nth-child(5) {
+	-webkit-transform: translate(-50%) translate(10px);
+	-moz-transform: translate(-50%) translate(10px);
+	-o-transform: translate(-50%) translate(10px);
+	-ms-transform: translate(-50%) translate(10px);
+	transform: translate(-50%) translate(10px);
+}
+
+.in-text span:nth-child(6) {
+	-webkit-transform: translate(-150%) translate(30px);
+	-moz-transform: translate(-150%) translate(30px);
+	-o-transform: translate(-150%) translate(30px);
+	-ms-transform: translate(-150%) translate(30px);
+	transform: translate(-150%) translate(30px);
+}
+
+.in-text span:nth-child(7) {
+	-webkit-transform: translate(-250%) translate(50px);
+	-moz-transform: translate(-250%) translate(50px);
+	-o-transform: translate(-250%) translate(50px);
+	-ms-transform: translate(-250%) translate(50px);
+	transform: translate(-250%) translate(50px);
+}
+
+.in-text span:nth-child(8) {
+	-webkit-transform: translate(-350%) translate(70px);
+	-moz-transform: translate(-350%) translate(70px);
+	-o-transform: translate(-350%) translate(70px);
+	-ms-transform: translate(-350%) translate(70px);
+	transform: translate(-350%) translate(70px);
+}
+
+.in-text span:not(:last-child) {
+	opacity: 0;
+	pointer-events: none;
+}
+
+.in-text span:last-child {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -50px;
+	z-index: 100;
+	background: url("https://tranexus.com/assets/brand/tranexus-brand-alt.png") no-repeat center center;
+	background-size: 100%;
+}
+
+.in-text:hover span:not(:last-child) {
+	-webkit-transform: translate(0%);
+	-moz-transform: translate(0%);
+	-o-transform: translate(0%);
+	-ms-transform: translate(0%);
+	transform: translate(0%);
+	opacity: 1;
+}
+
+.in-text:hover span:last-child {
+	opacity: 0;
+	-webkit-transform: scale(1.4);
+	-moz-transform: scale(1.4);
+	-o-transform: scale(1.4);
+	-ms-transform: scale(1.4);
+	transform: scale(1.4);
+}
