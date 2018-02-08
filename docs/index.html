@@ -48,11 +48,29 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="#399a39">
     <meta name="apple-mobile-web-app-title" content="TraNexus">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- STYLE SHEETS -->
     <link rel="stylesheet" href="https://tranexus.com/css/intro.css">
     <link rel="stylesheet" href="https://tranexus.com/css/cover.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
+    <!-- SCRIPTS -->
+    <script>
+        /* blur on modal open, unblur on close */
+        $('#myModal').on('show.bs.modal', function () {
+            $('.container').addClass('blur');
+        })
+
+        $('#myModal').on('hide.bs.modal', function () {
+            $('.container').removeClass('blur');
+        })
+    </script>
+    <style>
+        .blur {
+            -webkit-filter: blur(5px) grayscale(50%);
+        }
+    </style>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <!--[if lt IE 9]>
@@ -63,34 +81,33 @@
 </head>
 
 <body>
-            <div class="container">
-                <!-- INTRO EFFECT -->
-                <div class="row">
-                    <h2 class="in-text">
-                        <span>T</span>
-                        <span>r</span>
-                        <span>a</span>
-                        <span>N</span>
-                        <span>e</span>
-                        <span>x</span>
-                        <span>u</span>
-                        <span>s</span>
-                        <span></span>
-                    </h2>
-                </div>
-                <div class="row">  
-                    <br>
-                    <h3 class="lead">COMING SOON</h3>
-                    <br>
-                </div>
-                <div class="row">
-                <!-- Button to trigger the code modal -->
-                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#traModal">Learn More</button>
-                </div>
+<!-- <h1>Hover this logo and see the magic</h1> -->
+<div class="jumbotron" style="color: white; background-color: white;"></div>
+		<div class="container">
+      <div class="row">
+				<h2 class="in-text">
+					<span>T</span>
+					<span>r</span>
+					<span>a</span>
+					<span>N</span>
+					<span>e</span>
+					<span>x</span>
+					<span>u</span>
+          <span>s</span>
+					<span></span>
+				</h2>
+      </div>
     </div>
-            <!-- CODE MODAL -->
-            <!-- Modal -->
-            <div class="modal fade" id="traModal" tabindex="-1" role="dialog" aria-labelledby="traModalTitle" aria-hidden="true">
+<div class="container">
+  <div class="row">
+    <div class="col-sm-offset-5 col-2 text-center">
+      <br>  
+      <button type="button" class="btn btn-success" data-toggle="modal" data-target="#traModal">Learn More</button>
+      <br><br>
+       </div>
+    </div>
+</div>
+<div class="modal fade" id="traModal" tabindex="-1" role="dialog" aria-labelledby="traModalTitle" aria-hidden="true">
                 <div class="modal-dialog modal-lg" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -110,15 +127,11 @@
                     </div>
                 </div>
             </div>
-
+            <div class="container">
             <div class="footer">
-                <div class="inner">
-                    <p>Copyright 2018
-                        <a href="https://tranexus.com">TraNexus</a>
-                    </p>
-                </div>
+                    
             </div>
-
+            </div>
     <!-- Bootstrap core JavaScript -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
