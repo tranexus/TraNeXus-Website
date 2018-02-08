@@ -9,9 +9,11 @@ body, html {
     background-position: center;
     background-size: cover;
     position: relative;
-    color: black;
+    color: white;
     font-family: 'Open Sans', Arial, Helvetica, Sans-Serif;
     font-size: 25px;
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
 }
 
 .topleft {
