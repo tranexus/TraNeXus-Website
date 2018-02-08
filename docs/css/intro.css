@@ -28,7 +28,7 @@
 	line-height: 100px;
 	text-align: center;
 	margin: 0 0 0 -30px;
-	color: #3ea85c;
+	color: #ffffff;
 	text-shadow: 0 -1px 1px rgba(0,0,0,0.1);
   	-webkit-transition: all 0.6s ease-in;
 	-moz-transition: all 0.6s ease-in;
@@ -43,11 +43,11 @@
 }
 
 .in-text span:nth-child(odd) {
-	background: #ffffff url("https://i.imgur.com/yofAc6p.png");
+	background: #3ea85c url("https://i.imgur.com/yofAc6p.png");
 }
 
 .in-text span:nth-child(even) {
-	background: #ffffff url("https://i.imgur.com/yofAc6p.png"); 
+	background: #3ea85c url("https://i.imgur.com/yofAc6p.png"); 
 }
 
 .in-text span:nth-child(1) {
