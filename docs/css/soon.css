@@ -4,13 +4,13 @@ body, html {
 }
 
 .bgimg {
-    background-image: url('/w3images/forestbridge.jpg');
+    background-image: url('assets/brand/tranexus-logo-black-wide.png');
     height: 100%;
     background-position: center;
     background-size: cover;
     position: relative;
-    color: white;
-    font-family: "Courier New", Courier, monospace;
+    color: black;
+    font-family: 'Open Sans', Arial, Helvetica, Sans-Serif;
     font-size: 25px;
 }
 
