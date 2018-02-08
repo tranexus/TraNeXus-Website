@@ -1,10 +1,9 @@
 .in-text {
 	font-size: 40px;
-	text-transform: uppercase;
-	margin: 25px auto 0 auto;
-	width: 680px;
-	height: 100px;
-	padding-left: 15px;
+	margin: 50px auto 0 auto;
+	width: 780px;
+	height: 200px;
+	padding-left: 25px;
 	font-family: Arial;
 	font-weight: 375;
 	position: relative;
@@ -25,12 +24,12 @@
 	display: block;
 	float: left;
 	border-radius: 50%;
-	width: 100px;
-	height: 100px;
-	line-height: 100px;
+	width: 200px;
+	height: 200px;
+	line-height: 200px;
 	text-align: center;
 	margin: 0 0 0 -20px;
-	color: rgba(255, 255, 255, 0.95);
+	color: rgb(27, 116, 27);
 	text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.1);
 	-webkit-transition: all 0.4s ease-in-out;
 	-moz-transition: all 0.4s ease-in-out;
@@ -40,11 +39,11 @@
 }
 
 .in-text span:nth-child(odd) {
-	background: rgba(82, 82, 82, 0.8) url("https://i.imgur.com/yofAc6p.png");
+	background: #D9D9D9FF url("https://i.imgur.com/yofAc6p.png");
 }
 
 .in-text span:nth-child(even) {
-	background: rgba(40, 40, 40, 0.8) url("https://i.imgur.com/yofAc6p.png");
+	background: #B7B7B7FF url("https://i.imgur.com/yofAc6p.png");
 }
 
 .in-text span:nth-child(1) {
@@ -112,7 +111,7 @@
 	position: absolute;
 	top: 0;
 	left: 50%;
-	margin-left: -50px;
+	margin-left: -100px;
 	z-index: 100;
 	background: url("https://tranexus.com/assets/brand/tranexus-brand-alt.png") no-repeat center center;
 	background-size: 100%;
