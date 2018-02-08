@@ -4,7 +4,7 @@ body, html {
 }
 
 .bgimg {
-    background-image: url('assets/brand/tranexus-logo-black-wide.png');
+    background-image: url('https://tranexus.com/assets/brand/tranexus-logo-black-wide.png');
     height: 100%;
     background-position: center;
     background-size: cover;
