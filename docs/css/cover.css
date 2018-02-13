@@ -32,7 +32,7 @@ body {
     /* 
     background: url('https://tranexus.com/assets/brand/tranexus-logo-white-screen.png') no-repeat center center fixed;
     */
-    background: white no-repeat center center fixed;
+    background: rgb(0, 20, 7) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -43,7 +43,7 @@ body {
     -ms-flex-pack: center;
     -webkit-box-pack: center;
     justify-content: center;
-    color: #fff;
+    color: rgb(31, 100, 31);
     text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
     box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
 }
