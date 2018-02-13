@@ -9,7 +9,7 @@ body, html {
     background-position: center;
     background-size: cover;
     position: relative;
-    color: white;
+    color: #399a39;
     font-family: 'Open Sans', Arial, Helvetica, Sans-Serif;
     font-size: 25px;
     -webkit-filter: blur(3.5px);
