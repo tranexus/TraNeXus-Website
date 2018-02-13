@@ -115,11 +115,11 @@
 	position: absolute;
 	top: 0;
 	left: 50%;
-  height: 100px;
+  	height: 100px;
 	margin-left: -50px;
 	z-index: 100;
 	background: url("https://tranexus.com/assets/brand/tranexus-logo-clear.png") no-repeat center center;
-  background-size: 100%;
+  	background-size: 100%;
 }
 
 .in-text:hover span:not(:last-child){
@@ -143,7 +143,7 @@
 @media (min-width: 768px) {
 	.in-text {
 		font-size: 20px;
-		  text-transform: uppercase;
+		 text-transform: uppercase;
 		margin: 25px auto 0 auto;
 		width: 600px;
 		height: 50px;
@@ -258,11 +258,11 @@
 		position: absolute;
 		top: 0;
 		left: 50%;
-	  height: 50px;
+	  	height: 50px;
 		margin-left: -12.5px;
 		z-index: 100;
 		background: url("https://tranexus.com/assets/brand/tranexus-logo-clear.png") no-repeat center center;
-	  background-size: 100%;
+	  	background-size: 100%;
 	}
 	
 	.in-text:hover span:not(:last-child){
