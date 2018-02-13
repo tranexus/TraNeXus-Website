@@ -12,7 +12,7 @@
 .in-text:before,
 .in-text:after {
 	content: " ";
-    display: table;
+    	display: table;
 }
 
 .in-text:after {
