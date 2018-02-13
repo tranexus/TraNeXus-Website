@@ -26,6 +26,7 @@ body, html {
     position: absolute;
     bottom: 0;
     left: 16px;
+    color: white;
 }
 
 .middle {
@@ -34,6 +35,9 @@ body, html {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    color: white;
+    font-family: 'Open Sans', Arial, Helvetica, Sans-Serif;
+    font-size: 25px;
 }
 
 hr {
