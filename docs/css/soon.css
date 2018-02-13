@@ -16,6 +16,18 @@ body, html {
     filter: blur(3.5px);
 }
 
+.bgimg:before{
+    position: absolute;
+    content:" ";
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    display: block;
+    z-index:0;
+    background-color: rgba(0, 20, 7,0.5);
+  }
+
 .topleft {
     position: absolute;
     top: 0;
