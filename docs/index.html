@@ -31,7 +31,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="/assets/favicon/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="/assets/favicon/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="/assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
@@ -50,12 +50,43 @@
     <link rel="stylesheet" href="css/soon.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
+    <style>
+        i {
+            color: white;
+        }
+
+        .btn-get-started {
+            font-family: ubuntu, sans-serif;
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 16px;
+            letter-spacing: 1px;
+            display: inline-block;
+            border-radius: 2px;
+            transition: .5s;
+            margin: 10px;
+            min-width: 190px;
+            border: 2px solid #3e9c50;
+            color: #3e9c50;
+            background: rgba(0, 0, 0, .678);
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px
+        }
+
+        .btn-get-started:hover {
+            background: transparent;
+            border: 2px solid transparent;
+            color: #fff
+        }
+    </style>
 </head>
 
 <body>
     <div class="bgimg">
         <div class="topleft"></div>
-    </div>    
+    </div>
     <div class="middle">
         <div class="container">
             <div class="row">
@@ -73,18 +104,24 @@
             </div>
         </div>
         <br>
-            <h2>COMING SOON</h2>
-            <p>A next-generation social interactive travel app based on blockchain</p>
+        <h2>COMING SOON</h2>
+        <p>A next-generation social interactive travel app based on blockchain</p>
         <br>
-            <p id="timer" style="font-size:30px"></p>
+        <p id="timer" style="font-size:30px"></p>
+        <p>
+            <a href="https://docs.google.com/document/d/19EPvC4HwwtZOoDj6X4JqsdD8JBGpcrNRFpcG7J_szsQ/edit?usp=sharing" class="btn-get-started">WHITEPAPER</a>
+        </p>
+        <p>
+            <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vT_WPeK5KmAu9HyHajTe269OQ8Ynl-Vpfl92juEu5svYMt-DuwNPyLzDl6NQ57ortSLUvtPxSnkfBvR/pubhtml#" class="btn-get-started">TOKEN DATA</a>
+        </p>
     </div>
     <div class="bottomleft">
         <p>&#169 2018 TraNexus</p>
-    </div>  
+    </div>
     <script>
         // Set the date we're counting down to
         var countDownDate = new Date("March 17, 2018 00:00:00").getTime();
-        document.getElementById("timer").innerHTML =  "00d " + "00h " + "00m " + "00s ";
+        document.getElementById("timer").innerHTML = "00d " + "00h " + "00m " + "00s ";
         // Update the count down every 1 second
         var countdownfunction = setInterval(function () {
 
@@ -101,25 +138,26 @@
             var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
             // Output the result in an element with id="timer"
-            document.getElementById("timer").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+            document.getElementById("timer").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds +
+                "s ";
 
             // If the count down is over, write some text 
-                if (distance < 0) {
+            if (distance < 0) {
                 clearInterval(countdownfunction);
                 document.getElementById("timer").innerHTML = "EXPIRED";
             }
         }, 1000);
     </script>
 
-        <!-- Bootstrap core JavaScript -->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-            crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-            crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js" integrity="sha384-feJI7QwhOS+hwpX2zkaeJQjeiwlhOP+SdQDqhgvvo1DsjtiSQByFdThsxO669S2D"
-            crossorigin="anonymous"></script>  
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js" integrity="sha384-feJI7QwhOS+hwpX2zkaeJQjeiwlhOP+SdQDqhgvvo1DsjtiSQByFdThsxO669S2D"
+        crossorigin="anonymous"></script>
 
 </body>
 
