@@ -70,7 +70,7 @@
     <link rel='stylesheet' id='uncode-style-css' href='css/source-a.css' type='text/css' media='all' />
     <link rel='stylesheet' href='css/extraction.css' type='text/css' />
     <link rel='stylesheet' id='uncode-custom-style-css' href='css/style-custom.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='child-style-css' href='wp-content/themes/tranexus/style.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='child-style-css' href='css/style.css' type='text/css' media='all' />
     <link rel='stylesheet' id='uncode-icons-css' href='css/uncode-icons.css' type='text/css' media='all' />
     <link rel='stylesheet' id='uncodefont-google-css' href='http://fonts.googleapis.com/css?family=Poppins%3A300%2Cregular%2C500%2C600%2C700%7CDroid+Serif%3Aregular%2Citalic%2C700%2C700italic%7CDosis%3A200%2C300%2Cregular%2C500%2C600%2C700%2C800%7CPlayfair+Display%3Aregular%2Citalic%2C700%2C700italic%2C900%2C900italic%7COswald%3A300%2Cregular%2C700%7CRoboto%3A100%2C100italic%2C300%2C300italic%2Cregular%2Citalic%2C500%2C500italic%2C700%2C700italic%2C900%2C900italic%7CNunito%3A200%2C200italic%2C300%2C300italic%2Cregular%2Citalic%2C600%2C600italic%2C700%2C700italic%2C900%2C900italic&amp;subset=devanagari%2Clatin-ext%2Clatin%2Ccyrillic%2Cvietnamese%2Cgreek%2Ccyrillic-ext%2Cgreek-ext&amp;ver=1.0.0'
         type='text/css' media='all' />
@@ -171,19 +171,354 @@
     </script>
     <script type='text/javascript' src='js/mediaelement/mediaelement-and-player.min.js'></script>
     <script type='text/javascript' src='js/mediaelement/mediaelement-migrate.min.js'></script>
-    <script type='text/javascript'>
-        /* <![CDATA[ */
-        var _wpmejsSettings = {
-            "pluginPath": "\/wp-includes\/js\/mediaelement\/",
-            "classPrefix": "mejs-",
-            "stretching": "responsive"
-        };
-        /* ]]> */
-    </script>
     <script type='text/javascript' src='js/ai-uncode.js' id='uncodeAI' data-home='/' data-path='/' data-breakpoints-images='258,516,720,1032,1440,2064,2880'></script>
     <script type='text/javascript' src='js/init.js'></script>
     <link rel="canonical" href="index.html" />
     <link rel='shortlink' href='index.html' />
+    <style>
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 .07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+
+        @media (min-width: 960px) {
+            .limit-width {
+                max-width: 1200px;
+                margin: auto;
+            }
+        }
+
+        .shift_up_btn {
+            margin-top: -18px !important;
+        }
+
+        .dark_bg .product_subtitle {
+            color: #13bd4a !important;
+        }
+
+        .row-container.style-dark-bg.footer-center.footer-last {
+            padding-top: 0px !important;
+            padding-bottom: 50px !important;
+        }
+
+        .bottom_footer_row {
+            padding-bottom: 15px !important;
+            padding-top: 50px;
+        }
+
+        .hero_slider_row .owl-carousel-wrapper,
+        .hero_slider_row .wpb_layerslider_element {
+            /*position: absolute;
+	top: 0;
+	height: 100%;
+	z-index: -1;
+	width: 100%;
+	*/
+        }
+
+        .hero_slider_row .row {
+            padding-top: 0px !important;
+            padding-bottom: 0px !important;
+        }
+
+        .hero_slider_row .wpb_layerslider_element {
+            margin-top: 0px !important;
+        }
+
+        @media (max-width: 1100px) {
+            .extra_padding_hide {
+                display: none !important;
+            }
+        }
+
+        @media (min-width: 960px) {
+            .mobile_phone_image_row .mobile_phone_image .uncode-single-media-wrapper img {
+                max-height: 550px;
+                width: auto;
+            }
+        }
+
+        @media (max-width: 959px) {
+            .mobile_phone_image_row .mobile_phone_image .uncode-single-media-wrapper img {
+                max-width: 600px;
+                width: 95%;
+                margin: 0 auto;
+            }
+        }
+
+        .mobile_only.advisor_row img {
+            max-width: 350px;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 900px) and (min-width: 851px) {
+            .mobile_phone_image_row .mobile_phone_image .uncode-single-media-wrapper img {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 850px) and (min-width: 801px) {
+            .main-container .row-container.mobile_phone_image_row>.row>.row-inner .col-lg-6:nth-child(1) .mobile_phone_image {
+                left: -10%;
+                width: 120%;
+            }
+            .main-container .row-container.mobile_phone_image_row>.row>.row-inner .col-lg-6:nth-child(2) .mobile_phone_image {
+                right: -10%;
+                width: 120%;
+            }
+        }
+
+        @media (max-width: 800px) and (min-width: 740px) {
+            .main-container .row-container.mobile_phone_image_row>.row>.row-inner .col-lg-6:nth-child(1) .mobile_phone_image {
+                left: -20%;
+                width: 130%;
+            }
+            .main-container .row-container.mobile_phone_image_row>.row>.row-inner .col-lg-6:nth-child(2) .mobile_phone_image {
+                right: -20%;
+                width: 130%;
+            }
+        }
+
+        @media (min-width: 740px) {
+            .main-container .row-container.mobile_phone_image_row>.row {
+                padding-bottom: 0px;
+                display: table;
+            }
+            .main-container .row-container.mobile_phone_image_row>.row>.row-inner {
+                display: table-row;
+            }
+            .main-container .row-container.mobile_phone_image_row>.row>.row-inner .mobile_phone_image {
+                position: absolute;
+                bottom: 0;
+            }
+            .main-container .row-container.mobile_phone_image_row .col-lg-6 {
+                display: table-cell;
+                height: 100%;
+                float: none;
+            }
+            .main-container .row-container.mobile_phone_image_row .col-lg-6 .tmb .t-entry-visual {
+                overflow: visible;
+            }
+        }
+
+        @media (max-width: 739px) {
+            .mobile_phone_image_row .mobile_phone_image .uncode-single-media-wrapper img {
+                width: 65%;
+            }
+            .mobile_phone_image_row>.row {
+                padding-bottom: 0px !important;
+            }
+            .mobile_phone_image_row {
+                margin-bottom: -15px;
+            }
+            .z_index_bump_1 {
+                z-index: 1;
+            }
+            .z_index_bump_2 {
+                z-index: 2;
+            }
+        }
+
+        @media (max-width: 420px) {
+            .mobile_phone_image_row .mobile_phone_image .uncode-single-media-wrapper img {
+                width: 95%;
+            }
+        }
+
+        .hero_slider_row .owl-carousel-wrapper .owl-item .row-child {
+            padding: 0 !important;
+        }
+
+        .hero_slider_row .hero_text .row {
+            max-width: 1200px !important;
+            margin: 0 auto !important;
+            padding: 36px 36px 36px 36px;
+        }
+
+        .pie_chart {
+            margin: 0 auto;
+            max-width: 900px;
+        }
+
+        .home_hero_slider .owl-height,
+        .home_hero_slider .owl-stage,
+        .home_hero_slider .owl-item,
+        .home_hero_slider .uncode-slider .row-inner {
+            height: 100% !important;
+        }
+
+        .home_hero_slider .owl-height .column_child,
+        .home_hero_slider .uncoltable {
+            display: block !important;
+        }
+
+        .home_hero_slider .owl-height .uncont,
+        .home_hero_slider .owl-height .uncol,
+        .home_hero_slider .owl-height .uncode-single-media,
+        .home_hero_slider .owl-height .uncode-single-media div,
+        .home_hero_slider .owl-height .row-inner .uncol div {
+            height: 100% !important;
+            display: block !important;
+        }
+
+        ul.timeline {
+            padding: 0px !important;
+        }
+
+        .member_team_stacked .wpb_raw_code .wpb_wrapper {
+            display: table;
+            width: 100% !important;
+        }
+
+        .tranexus_timeline .line {
+            width: 100%;
+            position: absolute;
+            border-top: 2px solid #01a737;
+        }
+
+        ul.timeline li {
+            list-style: none;
+            width: 50%;
+            display: inline-block;
+            position: relative;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        ul.timeline li i:before {
+            content: '';
+            width: 10px;
+            height: 10px;
+            border: 2px solid #01a737;
+            display: block;
+            border-radius: 100%;
+            margin-top: 28px;
+            margin-left: -6px;
+        }
+
+        ul.timeline li i {
+            height: 30px;
+            position: absolute;
+            border-left: 2px solid #01a737;
+            top: 0px;
+            left: 0px;
+        }
+
+        ul.timeline li i:after {
+            content: '';
+            width: 8px;
+            height: 8px;
+            display: block;
+            border-radius: 100%;
+            margin-top: -41px;
+            margin-left: -5px;
+            background: #01a737;
+        }
+
+        ul.timeline li h3 {
+            color: #fff !important;
+        }
+
+        .dark_bg.member_team_stacked .background-inner {
+            background-size: auto !important;
+        }
+
+        .homepage_slider.row-container .owl-carousel-wrapper {
+            height: 100% !important;
+        }
+
+        .inset_member_row .background-wrapper {
+            background: #0b272f;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8) inset;
+        }
+
+        .inset_member_row .background-wrapper .background-inner {
+            opacity: .5;
+        }
+
+        @media (min-width: 960px) {
+            body .five_across_member_row .uncoltable .uncell .uncont .member_vertical_layout {
+                display: inline-block;
+                width: 16.5%;
+                margin-right: 4.375%;
+                vertical-align: top;
+                margin-top: 36px !important;
+            }
+            body .five_across_member_row .uncoltable .uncell .uncont .member_vertical_layout:last-child {
+                margin-right: 0;
+            }
+            /*.member_vertical_layout .text_col a {
+		position: absolute;
+		left: 50%;
+		margin-left: -61px;
+		bottom: 0;
+	}
+	.member_vertical_layout {
+		padding-bottom: 50px;
+	}
+	.member_vertical_row .uncell,.member_vertical_row .uncont,.member_vertical_row .member_vertical_layout {
+		height: 100% !important;
+	}
+	*/
+        }
+
+        @media (max-width: 959px) {
+            .homepage_slider .background-wrapper:after {
+                content: '';
+                background: rgba(0, 0, 0, 0.62);
+                position: absolute;
+                height: 100%;
+                width: 100%;
+            }
+            .homepage_slider .light_slider_row .background-wrapper:after {
+                background: rgba(255, 255, 255, 0.5);
+            }
+            /* .homepage_slider .half_text .column_child.col-lg-6:nth-child(1) {
+		width: 50%;
+		display: table-cell;
+	}
+	*/
+        }
+
+        .recentcomments a {
+            display: inline !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+
+        span.mce_SELRES_end,
+        span.mce_SELRES_start {
+            display: none !important;
+        }
+
+        .vc_custom_1522383778681 {
+            margin-top: 0px !important;
+        }
+
+        .vc_custom_1522475132387 {
+            margin-top: 0px !important;
+        }
+
+        .vc_custom_1522886923692 {
+            margin-bottom: 0px !important;
+        }
+
+        .vc_custom_1522886916961 {
+            margin-bottom: 0px !important;
+        }
+
+        .wpb_animate_when_almost_visible {
+            opacity: 1;
+        }
+    </style>
 </head>
 
 <body class="home page-template-default page page-id-316  style-color-lxmt-bg smooth-scroller hmenu hmenu-position-right header-full-width main-center-align menu-mobile-transparent menu-mobile-centered wpb-js-composer js-comp-ver-5.4.7 vc_responsive"
@@ -214,7 +549,7 @@
                                         <a href="index.html" class="navbar-brand" data-minheight="20">
                                             <div class="logo-image logo-skinnable" data-maxheight="75" style="height: 75px;">
                                                 <img src="uploads/2018/03/logo_horizontal_med-1-uai-258x72.png" alt="logo" width="258" height="72" class="img-responsive adaptive-async"
-                                                    data-uniqueid="882-724705" data-guid="uploads2018/03/logo_horizontal_med-1.png"
+                                                    data-uniqueid="882-724705" data-guid="uploads/2018/03/logo_horizontal_med-1.png"
                                                     data-path="2018/03/logo_horizontal_med-1.png" data-width="269" data-height="75"
                                                     data-singlew="null" data-singleh="null" data-crop="" data-fixed="height"
                                                 />
@@ -299,7 +634,7 @@
                                                             <div class="row-background background-element">
                                                                 <div class="background-wrapper">
                                                                     <div class="background-inner adaptive-async" style="background-image: url(uploads/2018/03/TN1-1.jpg);background-repeat: no-repeat;background-position: center bottom;background-attachment: scroll;background-size: cover;"
-                                                                        data-uniqueid="651-625190" data-guid="uploads2018/03/TN1-1.jpg"
+                                                                        data-uniqueid="651-625190" data-guid="uploads/2018/03/TN1-1.jpg"
                                                                         data-path="2018/03/TN1-1.jpg" data-width="" data-height=""
                                                                         data-singlew="12" data-singleh="null" data-crop=""></div>
 
@@ -359,7 +694,7 @@
                                                             <div class="row-background background-element">
                                                                 <div class="background-wrapper">
                                                                     <div class="background-inner adaptive-async" style="background-image: url(uploads/2018/03/Phones-uai-258x155.jpg);background-repeat: no-repeat;background-position: center center;background-attachment: scroll;background-size: cover;"
-                                                                        data-uniqueid="756-714015" data-guid="uploads2018/03/Phones.jpg"
+                                                                        data-uniqueid="756-714015" data-guid="uploads/2018/03/Phones.jpg"
                                                                         data-path="2018/03/Phones.jpg" data-width="2500" data-height="1498"
                                                                         data-singlew="12" data-singleh="null" data-crop=""></div>
 
@@ -419,7 +754,7 @@
                                                             <div class="row-background background-element">
                                                                 <div class="background-wrapper">
                                                                     <div class="background-inner adaptive-async" style="background-image: url(uploads/2018/03/TN7-1-uai-258x155.jpg);background-repeat: no-repeat;background-position: center bottom;background-attachment: scroll;background-size: cover;"
-                                                                        data-uniqueid="709-104175" data-guid="uploads2018/03/TN7-1.jpg"
+                                                                        data-uniqueid="709-104175" data-guid="uploads/2018/03/TN7-1.jpg"
                                                                         data-path="2018/03/TN7-1.jpg" data-width="2500" data-height="1498"
                                                                         data-singlew="12" data-singleh="null" data-crop=""></div>
 
@@ -782,7 +1117,7 @@
                                                 <div class="row-background background-element">
                                                     <div class="background-wrapper">
                                                         <div class="background-inner adaptive-async" style="background-image: url(uploads/2018/03/TraNexus_map_bg-uai-258x189.jpg);background-repeat: no-repeat;background-position: center center;background-attachment: scroll;background-size: cover;"
-                                                            data-uniqueid="471-193107" data-guid="uploads2018/03/TraNexus_map_bg.jpg"
+                                                            data-uniqueid="471-193107" data-guid="uploads/2018/03/TraNexus_map_bg.jpg"
                                                             data-path="2018/03/TraNexus_map_bg.jpg" data-width="2000" data-height="1464"
                                                             data-singlew="12" data-singleh="null" data-crop=""></div>
 
@@ -845,7 +1180,7 @@
                                                 <div class="row-background background-element">
                                                     <div class="background-wrapper">
                                                         <div class="background-inner adaptive-async" style="background-image: url(uploads/2018/03/TNGreen-uai-258x155.png);background-repeat: no-repeat;background-position: center center;background-attachment: scroll;background-size: cover;"
-                                                            data-uniqueid="786-791717" data-guid="uploads2018/03/TNGreen.png"
+                                                            data-uniqueid="786-791717" data-guid="uploads/2018/03/TNGreen.png"
                                                             data-path="2018/03/TNGreen.png" data-width="2500" data-height="1498"
                                                             data-singlew="12" data-singleh="null" data-crop=""></div>
 
@@ -899,7 +1234,7 @@
                                                                                                 <div class="t-entry-visual-tc">
                                                                                                     <div class="uncode-single-media-wrapper">
                                                                                                         <img class="adaptive-async" src="uploads/2018/03/NewWallet-1-uai-258x346.png" width="258" height="346" alt="" data-uniqueid="760-138893"
-                                                                                                            data-guid="uploads2018/03/NewWallet-1.png"
+                                                                                                            data-guid="uploads/2018/03/NewWallet-1.png"
                                                                                                             data-path="2018/03/NewWallet-1.png"
                                                                                                             data-width="804"
                                                                                                             data-height="1079"
@@ -929,7 +1264,7 @@
                                                 <div class="row-background background-element">
                                                     <div class="background-wrapper">
                                                         <div class="background-inner adaptive-async" style="background-image: url(uploads/2018/03/TN6_unopt-uai-258x129.jpg);background-repeat: no-repeat;background-position: center center;background-attachment: scroll;background-size: cover;"
-                                                            data-uniqueid="499-127425" data-guid="uploads2018/03/TN6_unopt.jpg"
+                                                            data-uniqueid="499-127425" data-guid="uploads/2018/03/TN6_unopt.jpg"
                                                             data-path="2018/03/TN6_unopt.jpg" data-width="1850" data-height="926"
                                                             data-singlew="12" data-singleh="null" data-crop=""></div>
                                                         <div class="block-bg-overlay style-color-jevc-bg" style="opacity: 0.6;"></div>
@@ -950,7 +1285,7 @@
                                                                                                 <div class="t-entry-visual-tc">
                                                                                                     <div class="uncode-single-media-wrapper">
                                                                                                         <img class="adaptive-async" src="uploads/2018/03/QuestMode-uai-258x353.png" width="258" height="353" alt="" data-uniqueid="779-986532"
-                                                                                                            data-guid="uploads2018/03/QuestMode.png"
+                                                                                                            data-guid="uploads/2018/03/QuestMode.png"
                                                                                                             data-path="2018/03/QuestMode.png"
                                                                                                             data-width="793"
                                                                                                             data-height="1085"
@@ -1006,7 +1341,7 @@
                                                                                                 <div class="t-entry-visual-tc">
                                                                                                     <div class="uncode-single-media-wrapper">
                                                                                                         <img class="adaptive-async" src="uploads/2018/03/QuestMode-uai-258x353.png" width="258" height="353" alt="" data-uniqueid="779-190948"
-                                                                                                            data-guid="uploads2018/03/QuestMode.png"
+                                                                                                            data-guid="uploads/2018/03/QuestMode.png"
                                                                                                             data-path="2018/03/QuestMode.png"
                                                                                                             data-width="793"
                                                                                                             data-height="1085"
@@ -1036,7 +1371,7 @@
                                                 <div class="row-background background-element">
                                                     <div class="background-wrapper">
                                                         <div class="background-inner adaptive-async" style="background-image: url(uploads/2018/03/TNGreenNEW-uai-258x153.png);background-repeat: no-repeat;background-position: center bottom;background-attachment: scroll;background-size: cover;"
-                                                            data-uniqueid="797-162928" data-guid="uploads2018/03/TNGreenNEW.png"
+                                                            data-uniqueid="797-162928" data-guid="uploads/2018/03/TNGreenNEW.png"
                                                             data-path="2018/03/TNGreenNEW.png" data-width="2500" data-height="1479"
                                                             data-singlew="12" data-singleh="null" data-crop=""></div>
 
@@ -1399,7 +1734,7 @@
                                                                                                 <div class="t-entry-visual-tc">
                                                                                                     <div class="uncode-single-media-wrapper">
                                                                                                         <img class="adaptive-async" src="uploads/2018/03/pie_chart-uai-258x127.png" width="258" height="127" alt="" data-uniqueid="543-192688"
-                                                                                                            data-guid="uploads2018/03/pie_chart.png"
+                                                                                                            data-guid="uploads/2018/03/pie_chart.png"
                                                                                                             data-path="2018/03/pie_chart.png"
                                                                                                             data-width="937"
                                                                                                             data-height="463"
@@ -1433,7 +1768,7 @@
                                                 <div class="row-background background-element">
                                                     <div class="background-wrapper">
                                                         <div class="background-inner adaptive-async" style="background-image: url(uploads/2018/03/map-uai-258x258.jpg);background-repeat: repeat;background-position: center center;background-attachment: scroll;background-size: cover;"
-                                                            data-uniqueid="608-124930" data-guid="uploads2018/03/map.jpg" data-path="2018/03/map.jpg"
+                                                            data-uniqueid="608-124930" data-guid="uploads/2018/03/map.jpg" data-path="2018/03/map.jpg"
                                                             data-width="650" data-height="650" data-singlew="12" data-singleh="null"
                                                             data-crop=""></div>
 
@@ -1468,7 +1803,7 @@
                                                                                                         <div class="uncont">
                                                                                                             <div class="member_vertical_layout ">
                                                                                                                 <div class="img_col">
-                                                                                                                    <img width="320" height="320" src="uploads/2018/04/marcel.png" class="attachment-320x320 size-320x320" alt="" srcset="uploads2018/04/marcel.png 380w, uploads2018/04/marcel-150x150.png 150w, uploads2018/04/marcel-300x300.png 300w"
+                                                                                                                    <img width="320" height="320" src="uploads/2018/04/marcel.png" class="attachment-320x320 size-320x320" alt="" srcset="uploads/2018/04/marcel.png 380w, uploads/2018/04/marcel-150x150.png 150w, uploads/2018/04/marcel-300x300.png 300w"
                                                                                                                         sizes="(max-width: 320px) 100vw, 320px"
                                                                                                                     />
                                                                                                                 </div>
@@ -1509,7 +1844,7 @@
                                                                                                         <div class="uncont">
                                                                                                             <div class="member_vertical_layout top_dog">
                                                                                                                 <div class="img_col">
-                                                                                                                    <img width="320" height="320" src="uploads/2018/03/pasted-image-0.png" class="attachment-320x320 size-320x320" alt="" srcset="uploads2018/03/pasted-image-0.png 320w, uploads2018/03/pasted-image-0-150x150.png 150w, uploads2018/03/pasted-image-0-300x300.png 300w"
+                                                                                                                    <img width="320" height="320" src="uploads/2018/03/pasted-image-0.png" class="attachment-320x320 size-320x320" alt="" srcset="uploads/2018/03/pasted-image-0.png 320w, uploads/2018/03/pasted-image-0-150x150.png 150w, uploads/2018/03/pasted-image-0-300x300.png 300w"
                                                                                                                         sizes="(max-width: 320px) 100vw, 320px"
                                                                                                                     />
                                                                                                                 </div>
@@ -1567,7 +1902,7 @@
                                                                                                         <div class="uncont">
                                                                                                             <div class="member_vertical_layout ">
                                                                                                                 <div class="img_col">
-                                                                                                                    <img width="320" height="320" src="uploads/2018/04/wei.png" class="attachment-320x320 size-320x320" alt="" srcset="uploads2018/04/wei.png 393w, uploads2018/04/wei-150x150.png 150w, uploads2018/04/wei-300x300.png 300w"
+                                                                                                                    <img width="320" height="320" src="uploads/2018/04/wei.png" class="attachment-320x320 size-320x320" alt="" srcset="uploads/2018/04/wei.png 393w, uploads/2018/04/wei-150x150.png 150w, uploads/2018/04/wei-300x300.png 300w"
                                                                                                                         sizes="(max-width: 320px) 100vw, 320px"
                                                                                                                     />
                                                                                                                 </div>
@@ -1620,7 +1955,7 @@
                                                                                                         <div class="uncont">
                                                                                                             <div class="member_vertical_layout top_dog">
                                                                                                                 <div class="img_col">
-                                                                                                                    <img width="320" height="320" src="uploads/2018/03/pasted-image-0.png" class="attachment-320x320 size-320x320" alt="" srcset="uploads2018/03/pasted-image-0.png 320w, uploads2018/03/pasted-image-0-150x150.png 150w, uploads2018/03/pasted-image-0-300x300.png 300w"
+                                                                                                                    <img width="320" height="320" src="uploads/2018/03/pasted-image-0.png" class="attachment-320x320 size-320x320" alt="" srcset="uploads/2018/03/pasted-image-0.png 320w, uploads/2018/03/pasted-image-0-150x150.png 150w, uploads/2018/03/pasted-image-0-300x300.png 300w"
                                                                                                                         sizes="(max-width: 320px) 100vw, 320px"
                                                                                                                     />
                                                                                                                 </div>
@@ -1678,7 +2013,7 @@
                                                                                                         <div class="uncont">
                                                                                                             <div class="member_vertical_layout ">
                                                                                                                 <div class="img_col">
-                                                                                                                    <img width="320" height="320" src="uploads/2018/04/marcel.png" class="attachment-320x320 size-320x320" alt="" srcset="uploads2018/04/marcel.png 380w, uploads2018/04/marcel-150x150.png 150w, uploads2018/04/marcel-300x300.png 300w"
+                                                                                                                    <img width="320" height="320" src="uploads/2018/04/marcel.png" class="attachment-320x320 size-320x320" alt="" srcset="uploads/2018/04/marcel.png 380w, uploads/2018/04/marcel-150x150.png 150w, uploads/2018/04/marcel-300x300.png 300w"
                                                                                                                         sizes="(max-width: 320px) 100vw, 320px"
                                                                                                                     />
                                                                                                                 </div>
@@ -1719,7 +2054,7 @@
                                                                                                         <div class="uncont">
                                                                                                             <div class="member_vertical_layout ">
                                                                                                                 <div class="img_col">
-                                                                                                                    <img width="320" height="320" src="uploads/2018/04/wei.png" class="attachment-320x320 size-320x320" alt="" srcset="uploads2018/04/wei.png 393w, uploads2018/04/wei-150x150.png 150w, uploads2018/04/wei-300x300.png 300w"
+                                                                                                                    <img width="320" height="320" src="uploads/2018/04/wei.png" class="attachment-320x320 size-320x320" alt="" srcset="uploads/2018/04/wei.png 393w, uploads/2018/04/wei-150x150.png 150w, uploads/2018/04/wei-300x300.png 300w"
                                                                                                                         sizes="(max-width: 320px) 100vw, 320px"
                                                                                                                     />
                                                                                                                 </div>
@@ -1775,7 +2110,7 @@
                                                                                                         <div class="uncont">
                                                                                                             <div class="member_vertical_layout ">
                                                                                                                 <div class="img_col">
-                                                                                                                    <img width="320" height="320" src="uploads/2018/03/alex_rayne.png" class="attachment-320x320 size-320x320" alt="" srcset="uploads2018/03/alex_rayne.png 424w, uploads2018/03/alex_rayne-150x150.png 150w, uploads2018/03/alex_rayne-300x300.png 300w"
+                                                                                                                    <img width="320" height="320" src="uploads/2018/03/alex_rayne.png" class="attachment-320x320 size-320x320" alt="" srcset="uploads/2018/03/alex_rayne.png 424w, uploads/2018/03/alex_rayne-150x150.png 150w, uploads/2018/03/alex_rayne-300x300.png 300w"
                                                                                                                         sizes="(max-width: 320px) 100vw, 320px"
                                                                                                                     />
                                                                                                                 </div>
@@ -1821,7 +2156,7 @@
                                                                                                             </div>
                                                                                                             <div class="member_vertical_layout ">
                                                                                                                 <div class="img_col">
-                                                                                                                    <img width="320" height="320" src="uploads/2018/04/geoff_buckley.png" class="attachment-320x320 size-320x320" alt="" srcset="uploads2018/04/geoff_buckley.png 450w, uploads2018/04/geoff_buckley-150x150.png 150w, uploads2018/04/geoff_buckley-300x300.png 300w"
+                                                                                                                    <img width="320" height="320" src="uploads/2018/04/geoff_buckley.png" class="attachment-320x320 size-320x320" alt="" srcset="uploads/2018/04/geoff_buckley.png 450w, uploads/2018/04/geoff_buckley-150x150.png 150w, uploads/2018/04/geoff_buckley-300x300.png 300w"
                                                                                                                         sizes="(max-width: 320px) 100vw, 320px"
                                                                                                                     />
                                                                                                                 </div>
@@ -1860,7 +2195,7 @@
                                                                                                             </div>
                                                                                                             <div class="member_vertical_layout ">
                                                                                                                 <div class="img_col">
-                                                                                                                    <img width="320" height="320" src="uploads/2018/04/hisham_zaazou.jpg" class="attachment-320x320 size-320x320" alt="" srcset="uploads2018/04/hisham_zaazou.jpg 407w, uploads2018/04/hisham_zaazou-150x150.jpg 150w, uploads2018/04/hisham_zaazou-300x300.jpg 300w"
+                                                                                                                    <img width="320" height="320" src="uploads/2018/04/hisham_zaazou.jpg" class="attachment-320x320 size-320x320" alt="" srcset="uploads/2018/04/hisham_zaazou.jpg 407w, uploads/2018/04/hisham_zaazou-150x150.jpg 150w, uploads/2018/04/hisham_zaazou-300x300.jpg 300w"
                                                                                                                         sizes="(max-width: 320px) 100vw, 320px"
                                                                                                                     />
                                                                                                                 </div>
@@ -1893,7 +2228,7 @@
                                                                                                             </div>
                                                                                                             <div class="member_vertical_layout ">
                                                                                                                 <div class="img_col">
-                                                                                                                    <img width="320" height="320" src="uploads/2018/04/mariette_du_toit.jpg" class="attachment-320x320 size-320x320" alt="" srcset="uploads2018/04/mariette_du_toit.jpg 546w, uploads2018/04/mariette_du_toit-150x150.jpg 150w, uploads2018/04/mariette_du_toit-300x300.jpg 300w"
+                                                                                                                    <img width="320" height="320" src="uploads/2018/04/mariette_du_toit.jpg" class="attachment-320x320 size-320x320" alt="" srcset="uploads/2018/04/mariette_du_toit.jpg 546w, uploads/2018/04/mariette_du_toit-150x150.jpg 150w, uploads/2018/04/mariette_du_toit-300x300.jpg 300w"
                                                                                                                         sizes="(max-width: 320px) 100vw, 320px"
                                                                                                                     />
                                                                                                                 </div>
@@ -1932,7 +2267,7 @@
                                                                                                             <div class="member_vertical_layout ">
                                                                                                                 <div class="img_col">
                                                                                                                     <img width="320" height="320" src="uploads/2018/04/olly_wheatcroft-1.jpg" class="attachment-320x320 size-320x320" alt=""
-                                                                                                                        srcset="uploads2018/04/olly_wheatcroft-1.jpg 587w, uploads2018/04/olly_wheatcroft-1-150x150.jpg 150w, uploads2018/04/olly_wheatcroft-1-300x300.jpg 300w"
+                                                                                                                        srcset="uploads/2018/04/olly_wheatcroft-1.jpg 587w, uploads/2018/04/olly_wheatcroft-1-150x150.jpg 150w, uploads/2018/04/olly_wheatcroft-1-300x300.jpg 300w"
                                                                                                                         sizes="(max-width: 320px) 100vw, 320px"
                                                                                                                     />
                                                                                                                 </div>
@@ -1995,7 +2330,7 @@
                                                 <div class="row-background background-element">
                                                     <div class="background-wrapper">
                                                         <div class="background-inner adaptive-async" style="background-image: url(uploads/2018/03/map-uai-258x258.jpg);background-repeat: repeat;background-position: center center;background-attachment: scroll;background-size: cover;"
-                                                            data-uniqueid="608-124494" data-guid="uploads2018/03/map.jpg" data-path="2018/03/map.jpg"
+                                                            data-uniqueid="608-124494" data-guid="uploads/2018/03/map.jpg" data-path="2018/03/map.jpg"
                                                             data-width="650" data-height="650" data-singlew="12" data-singleh="null"
                                                             data-crop=""></div>
 
@@ -2027,7 +2362,7 @@
                                                                                                         <div class="uncont">
                                                                                                             <div class="member_vertical_layout ">
                                                                                                                 <div class="img_col">
-                                                                                                                    <img width="298" height="298" src="uploads/2018/04/joe_mcinerney.png" class="attachment-320x320 size-320x320" alt="" srcset="uploads2018/04/joe_mcinerney.png 298w, uploads2018/04/joe_mcinerney-150x150.png 150w"
+                                                                                                                    <img width="298" height="298" src="uploads/2018/04/joe_mcinerney.png" class="attachment-320x320 size-320x320" alt="" srcset="uploads/2018/04/joe_mcinerney.png 298w, uploads/2018/04/joe_mcinerney-150x150.png 150w"
                                                                                                                         sizes="(max-width: 298px) 100vw, 298px"
                                                                                                                     />
                                                                                                                 </div>
@@ -2117,7 +2452,7 @@
                                                                                                         <div class="uncont">
                                                                                                             <div class="member_vertical_layout ">
                                                                                                                 <div class="img_col">
-                                                                                                                    <img width="295" height="295" src="uploads/2018/04/carlos_vogeler.jpg" class="attachment-320x320 size-320x320" alt="" srcset="uploads2018/04/carlos_vogeler.jpg 295w, uploads2018/04/carlos_vogeler-150x150.jpg 150w"
+                                                                                                                    <img width="295" height="295" src="uploads/2018/04/carlos_vogeler.jpg" class="attachment-320x320 size-320x320" alt="" srcset="uploads/2018/04/carlos_vogeler.jpg 295w, uploads/2018/04/carlos_vogeler-150x150.jpg 150w"
                                                                                                                         sizes="(max-width: 295px) 100vw, 295px"
                                                                                                                     />
                                                                                                                 </div>
@@ -2209,7 +2544,7 @@
                                                                                                         <div class="uncont">
                                                                                                             <div class="member_vertical_layout ">
                                                                                                                 <div class="img_col">
-                                                                                                                    <img width="320" height="320" src="uploads/2018/04/jeanine_pires.png" class="attachment-320x320 size-320x320" alt="" srcset="uploads2018/04/jeanine_pires.png 450w, uploads2018/04/jeanine_pires-150x150.png 150w, uploads2018/04/jeanine_pires-300x300.png 300w"
+                                                                                                                    <img width="320" height="320" src="uploads/2018/04/jeanine_pires.png" class="attachment-320x320 size-320x320" alt="" srcset="uploads/2018/04/jeanine_pires.png 450w, uploads/2018/04/jeanine_pires-150x150.png 150w, uploads/2018/04/jeanine_pires-300x300.png 300w"
                                                                                                                         sizes="(max-width: 320px) 100vw, 320px"
                                                                                                                     />
                                                                                                                 </div>
@@ -2256,7 +2591,7 @@
                                                                                                         <div class="uncont">
                                                                                                             <div class="member_vertical_layout ">
                                                                                                                 <div class="img_col">
-                                                                                                                    <img width="320" height="320" src="uploads/2018/04/alain_st_ange.jpg" class="attachment-320x320 size-320x320" alt="" srcset="uploads2018/04/alain_st_ange.jpg 450w, uploads2018/04/alain_st_ange-150x150.jpg 150w, uploads2018/04/alain_st_ange-300x300.jpg 300w"
+                                                                                                                    <img width="320" height="320" src="uploads/2018/04/alain_st_ange.jpg" class="attachment-320x320 size-320x320" alt="" srcset="uploads/2018/04/alain_st_ange.jpg 450w, uploads/2018/04/alain_st_ange-150x150.jpg 150w, uploads/2018/04/alain_st_ange-300x300.jpg 300w"
                                                                                                                         sizes="(max-width: 320px) 100vw, 320px"
                                                                                                                     />
                                                                                                                 </div>
@@ -2294,7 +2629,7 @@
                                                                                                         <div class="uncont">
                                                                                                             <div class="member_vertical_layout ">
                                                                                                                 <div class="img_col">
-                                                                                                                    <img width="320" height="320" src="uploads/2018/04/frank_mccosker.png" class="attachment-320x320 size-320x320" alt="" srcset="uploads2018/04/frank_mccosker.png 450w, uploads2018/04/frank_mccosker-150x150.png 150w, uploads2018/04/frank_mccosker-300x300.png 300w"
+                                                                                                                    <img width="320" height="320" src="uploads/2018/04/frank_mccosker.png" class="attachment-320x320 size-320x320" alt="" srcset="uploads/2018/04/frank_mccosker.png 450w, uploads/2018/04/frank_mccosker-150x150.png 150w, uploads/2018/04/frank_mccosker-300x300.png 300w"
                                                                                                                         sizes="(max-width: 320px) 100vw, 320px"
                                                                                                                     />
                                                                                                                 </div>
@@ -2330,7 +2665,7 @@
                                                                                                         <div class="uncont">
                                                                                                             <div class="member_vertical_layout ">
                                                                                                                 <div class="img_col">
-                                                                                                                    <img width="320" height="320" src="uploads/2018/04/paul_wilke.png" class="attachment-320x320 size-320x320" alt="" srcset="uploads2018/04/paul_wilke.png 400w, uploads2018/04/paul_wilke-150x150.png 150w, uploads2018/04/paul_wilke-300x300.png 300w"
+                                                                                                                    <img width="320" height="320" src="uploads/2018/04/paul_wilke.png" class="attachment-320x320 size-320x320" alt="" srcset="uploads/2018/04/paul_wilke.png 400w, uploads/2018/04/paul_wilke-150x150.png 150w, uploads/2018/04/paul_wilke-300x300.png 300w"
                                                                                                                         sizes="(max-width: 320px) 100vw, 320px"
                                                                                                                     />
                                                                                                                 </div>
@@ -2394,7 +2729,7 @@
                                                                                                         <div class="uncont">
                                                                                                             <div class="member_vertical_layout ">
                                                                                                                 <div class="img_col">
-                                                                                                                    <img width="320" height="320" src="uploads/2018/04/helena_egan.png" class="attachment-320x320 size-320x320" alt="" srcset="uploads2018/04/helena_egan.png 448w, uploads2018/04/helena_egan-150x150.png 150w, uploads2018/04/helena_egan-300x300.png 300w"
+                                                                                                                    <img width="320" height="320" src="uploads/2018/04/helena_egan.png" class="attachment-320x320 size-320x320" alt="" srcset="uploads/2018/04/helena_egan.png 448w, uploads/2018/04/helena_egan-150x150.png 150w, uploads/2018/04/helena_egan-300x300.png 300w"
                                                                                                                         sizes="(max-width: 320px) 100vw, 320px"
                                                                                                                     />
                                                                                                                 </div>
@@ -2436,7 +2771,7 @@
                                                                                                         <div class="uncont">
                                                                                                             <div class="member_vertical_layout ">
                                                                                                                 <div class="img_col">
-                                                                                                                    <img width="250" height="250" src="uploads/2018/04/ghassan_aidi-1.png" class="attachment-320x320 size-320x320" alt="" srcset="uploads2018/04/ghassan_aidi-1.png 250w, uploads2018/04/ghassan_aidi-1-150x150.png 150w"
+                                                                                                                    <img width="250" height="250" src="uploads/2018/04/ghassan_aidi-1.png" class="attachment-320x320 size-320x320" alt="" srcset="uploads/2018/04/ghassan_aidi-1.png 250w, uploads/2018/04/ghassan_aidi-1-150x150.png 150w"
                                                                                                                         sizes="(max-width: 250px) 100vw, 250px"
                                                                                                                     />
                                                                                                                 </div>
@@ -2481,7 +2816,7 @@
                                                                                                         <div class="uncont">
                                                                                                             <div class="member_vertical_layout ">
                                                                                                                 <div class="img_col">
-                                                                                                                    <img width="320" height="320" src="uploads/2018/04/jens_thraenhart.png" class="attachment-320x320 size-320x320" alt="" srcset="uploads2018/04/jens_thraenhart.png 337w, uploads2018/04/jens_thraenhart-150x150.png 150w, uploads2018/04/jens_thraenhart-300x300.png 300w"
+                                                                                                                    <img width="320" height="320" src="uploads/2018/04/jens_thraenhart.png" class="attachment-320x320 size-320x320" alt="" srcset="uploads/2018/04/jens_thraenhart.png 337w, uploads/2018/04/jens_thraenhart-150x150.png 150w, uploads/2018/04/jens_thraenhart-300x300.png 300w"
                                                                                                                         sizes="(max-width: 320px) 100vw, 320px"
                                                                                                                     />
                                                                                                                 </div>
@@ -2532,7 +2867,7 @@
                                                                                                             <div class="member_vertical_layout ">
                                                                                                                 <div class="img_col">
                                                                                                                     <img width="221" height="221" src="uploads/2018/04/georgios_drakopoulos.jpg" class="attachment-320x320 size-320x320" alt=""
-                                                                                                                        srcset="uploads2018/04/georgios_drakopoulos.jpg 221w, uploads2018/04/georgios_drakopoulos-150x150.jpg 150w"
+                                                                                                                        srcset="uploads/2018/04/georgios_drakopoulos.jpg 221w, uploads/2018/04/georgios_drakopoulos-150x150.jpg 150w"
                                                                                                                         sizes="(max-width: 221px) 100vw, 221px"
                                                                                                                     />
                                                                                                                 </div>
@@ -2592,7 +2927,7 @@
                                                                                                             <div class="member_vertical_layout ">
                                                                                                                 <div class="img_col">
                                                                                                                     <img width="320" height="320" src="uploads/2018/04/dr_tom_selanniemi.jpg" class="attachment-320x320 size-320x320" alt=""
-                                                                                                                        srcset="uploads2018/04/dr_tom_selanniemi.jpg 529w, uploads2018/04/dr_tom_selanniemi-150x150.jpg 150w, uploads2018/04/dr_tom_selanniemi-300x300.jpg 300w"
+                                                                                                                        srcset="uploads/2018/04/dr_tom_selanniemi.jpg 529w, uploads/2018/04/dr_tom_selanniemi-150x150.jpg 150w, uploads/2018/04/dr_tom_selanniemi-300x300.jpg 300w"
                                                                                                                         sizes="(max-width: 320px) 100vw, 320px"
                                                                                                                     />
                                                                                                                 </div>
@@ -2647,7 +2982,7 @@
                                                                                                         <div class="uncont">
                                                                                                             <div class="member_vertical_layout ">
                                                                                                                 <div class="img_col">
-                                                                                                                    <img width="320" height="320" src="uploads/2018/04/vijay_poonoosamy.jpg" class="attachment-320x320 size-320x320" alt="" srcset="uploads2018/04/vijay_poonoosamy.jpg 427w, uploads2018/04/vijay_poonoosamy-150x150.jpg 150w, uploads2018/04/vijay_poonoosamy-300x300.jpg 300w"
+                                                                                                                    <img width="320" height="320" src="uploads/2018/04/vijay_poonoosamy.jpg" class="attachment-320x320 size-320x320" alt="" srcset="uploads/2018/04/vijay_poonoosamy.jpg 427w, uploads/2018/04/vijay_poonoosamy-150x150.jpg 150w, uploads/2018/04/vijay_poonoosamy-300x300.jpg 300w"
                                                                                                                         sizes="(max-width: 320px) 100vw, 320px"
                                                                                                                     />
                                                                                                                 </div>
@@ -2720,7 +3055,7 @@
                                                 <div class="row-background background-element">
                                                     <div class="background-wrapper">
                                                         <div class="background-inner adaptive-async" style="background-image: url(uploads/2018/03/map-uai-258x258.jpg);background-repeat: repeat;background-position: center center;background-attachment: scroll;background-size: cover;"
-                                                            data-uniqueid="608-104715" data-guid="uploads2018/03/map.jpg" data-path="2018/03/map.jpg"
+                                                            data-uniqueid="608-104715" data-guid="uploads/2018/03/map.jpg" data-path="2018/03/map.jpg"
                                                             data-width="650" data-height="650" data-singlew="12" data-singleh="null"
                                                             data-crop=""></div>
 
@@ -2752,7 +3087,7 @@
                                                                                                         <div class="uncont">
                                                                                                             <div class="member_vertical_layout ">
                                                                                                                 <div class="img_col">
-                                                                                                                    <img width="200" height="200" src="uploads/2018/04/william_thompson.png" class="attachment-320x320 size-320x320" alt="" srcset="uploads2018/04/william_thompson.png 200w, uploads2018/04/william_thompson-150x150.png 150w"
+                                                                                                                    <img width="200" height="200" src="uploads/2018/04/william_thompson.png" class="attachment-320x320 size-320x320" alt="" srcset="uploads/2018/04/william_thompson.png 200w, uploads/2018/04/william_thompson-150x150.png 150w"
                                                                                                                         sizes="(max-width: 200px) 100vw, 200px"
                                                                                                                     />
                                                                                                                 </div>
@@ -2789,7 +3124,7 @@
                                                                                                         <div class="uncont">
                                                                                                             <div class="member_vertical_layout ">
                                                                                                                 <div class="img_col">
-                                                                                                                    <img width="200" height="200" src="uploads/2018/04/natalie_james.png" class="attachment-320x320 size-320x320" alt="" srcset="uploads2018/04/natalie_james.png 200w, uploads2018/04/natalie_james-150x150.png 150w"
+                                                                                                                    <img width="200" height="200" src="uploads/2018/04/natalie_james.png" class="attachment-320x320 size-320x320" alt="" srcset="uploads/2018/04/natalie_james.png 200w, uploads/2018/04/natalie_james-150x150.png 150w"
                                                                                                                         sizes="(max-width: 200px) 100vw, 200px"
                                                                                                                     />
                                                                                                                 </div>
@@ -2826,7 +3161,7 @@
                                                                                                         <div class="uncont">
                                                                                                             <div class="member_vertical_layout ">
                                                                                                                 <div class="img_col">
-                                                                                                                    <img width="200" height="200" src="uploads/2018/04/yifan_wang.png" class="attachment-320x320 size-320x320" alt="" srcset="uploads2018/04/yifan_wang.png 200w, uploads2018/04/yifan_wang-150x150.png 150w"
+                                                                                                                    <img width="200" height="200" src="uploads/2018/04/yifan_wang.png" class="attachment-320x320 size-320x320" alt="" srcset="uploads/2018/04/yifan_wang.png 200w, uploads/2018/04/yifan_wang-150x150.png 150w"
                                                                                                                         sizes="(max-width: 200px) 100vw, 200px"
                                                                                                                     />
                                                                                                                 </div>
@@ -2863,7 +3198,7 @@
                                                                                                         <div class="uncont">
                                                                                                             <div class="member_vertical_layout ">
                                                                                                                 <div class="img_col">
-                                                                                                                    <img width="200" height="200" src="uploads/2018/04/cameron_hensley.png" class="attachment-320x320 size-320x320" alt="" srcset="uploads2018/04/cameron_hensley.png 200w, uploads2018/04/cameron_hensley-150x150.png 150w"
+                                                                                                                    <img width="200" height="200" src="uploads/2018/04/cameron_hensley.png" class="attachment-320x320 size-320x320" alt="" srcset="uploads/2018/04/cameron_hensley.png 200w, uploads/2018/04/cameron_hensley-150x150.png 150w"
                                                                                                                         sizes="(max-width: 200px) 100vw, 200px"
                                                                                                                     />
                                                                                                                 </div>
@@ -2961,7 +3296,7 @@
                                                                                                                                     <div class="t-entry-visual-tc">
                                                                                                                                         <div class="uncode-single-media-wrapper">
                                                                                                                                             <img class="adaptive-async" src="uploads/2018/03/ResoNova-2.jpg" width="200" height="108" alt="" data-uniqueid="493-125902"
-                                                                                                                                                data-guid="uploads2018/03/ResoNova-2.jpg"
+                                                                                                                                                data-guid="uploads/2018/03/ResoNova-2.jpg"
                                                                                                                                                 data-path="2018/03/ResoNova-2.jpg"
                                                                                                                                                 data-width="200"
                                                                                                                                                 data-height="108"
@@ -2995,7 +3330,7 @@
                                                                                                                                 <div class="t-entry-visual" tabindex="0">
                                                                                                                                     <div class="t-entry-visual-tc">
                                                                                                                                         <div class="uncode-single-media-wrapper">
-                                                                                                                                            <img class="adaptive-async" src="uploads/2018/04/sunx.jpg" width="200" height="108" alt="" data-uniqueid="805-118050" data-guid="uploads2018/04/sunx.jpg"
+                                                                                                                                            <img class="adaptive-async" src="uploads/2018/04/sunx.jpg" width="200" height="108" alt="" data-uniqueid="805-118050" data-guid="uploads/2018/04/sunx.jpg"
                                                                                                                                                 data-path="2018/04/sunx.jpg"
                                                                                                                                                 data-width="200"
                                                                                                                                                 data-height="108"
