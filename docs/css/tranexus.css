@@ -17,7 +17,7 @@
 /*------------------------------------------------------------------------------*/
 
 body {
-  background: rgba(17, 34, 42, 0.25) url("https://tranexus.com/uploads/2018/03/TraNexus_map_bg.jpg") repeat fixed;
+  background: rgba(17, 34, 42, 0.25) url("https://tranexus.com/img/map.jpg") repeat fixed;
 }
 
 a {
@@ -42,7 +42,7 @@ h4 {
   width: 100%;
   height: 100%;
   overflow: visible;
-  background: rgb(17, 34, 42) url("https://tranexus.github.io/content/loader/preloader.gif") no-repeat center center;
+  background: rgb(17, 34, 42) url("https://tranexus.com/img/preloader.gif") no-repeat center center;
 }
 
 .container {
