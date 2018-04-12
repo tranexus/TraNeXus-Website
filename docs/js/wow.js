@@ -1,3 +1,10 @@
+// Preloader
+$(window).on('load', function() {
+  $('.preloader').delay(1800).fadeOut('slow', function() {
+    $(this).remove();
+  });
+});
+
 // Wow
 var Wow = function() {
   'use strict';
@@ -6,8 +13,8 @@ var Wow = function() {
   var handleWow = function() {
     var wow = new WOW({
       mobile: false
-      });
-      wow.init();
+    });
+    wow.init();
   }
 
   return {
