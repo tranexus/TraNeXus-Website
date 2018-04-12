@@ -147,9 +147,9 @@ h4 {
 
 .xtnx-app-icon {
   cursor: pointer;
-  -webkit-box-shadow: -2px 7px 25px 2px rgba(255, 255, 255, 0.39);
-  -moz-box-shadow: -2px 7px 25px 2px rgba(255, 255, 255, 0.39);
-  box-shadow: -2px 7px 25px 2px rgba(255, 255, 255, 0.39);
+  -webkit-box-shadow: -2px 7px 25px 3px rgba(255, 255, 255, 0.39);
+  -moz-box-shadow: -2px 7px 25px 3px rgba(255, 255, 255, 0.39);
+  box-shadow: -2px 7px 25px 3px rgba(255, 255, 255, 0.39);
   -webkit-transition: all ease-in-out 500ms;
   -moz-transition: all ease-in-out 500ms;
   -o-transition: all ease-in-out 500ms;
@@ -158,9 +158,9 @@ h4 {
 
 .xtnx-app-icon:hover {
   cursor: pointer;
-  -webkit-box-shadow: -2px 15px 21px 0px rgba(255, 255, 255, 0.2);
-  -moz-box-shadow: -2px 15px 21px 0px rgba(255, 255, 255, 0.2);
-  box-shadow: -2px 15px 21px 0px rgba(255, 255, 255, 0.2);
+  -webkit-box-shadow: -2px 15px 21px 2px rgba(255, 255, 255, 0.2);
+  -moz-box-shadow: -2px 15px 21px 2px rgba(255, 255, 255, 0.2);
+  box-shadow: -2px 15px 21px 2px rgba(255, 255, 255, 0.2);
   transform: translate(0px, -2px);
 }
 
