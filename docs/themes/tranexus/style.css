@@ -172,7 +172,7 @@ body h2 {
       font-size: 42px !important; } }
 
 body h3 {
-  font-size: 34px !important;
+  font-size: 28px !important;
   font-weight: 700 !important;
   text-transform: uppercase; }
   @media (max-width: 959px) {
@@ -226,7 +226,8 @@ body .style-light h3 {
   color: #8c9aa0 !important; }
 
 .dark_img_bg p {
-  color: #d4d4d4 !important; }
+  color: #ffffff !important;
+  font-weight: 700 !important; }
 
 a {
   -webkit-transform: perspective(1px) translateZ(0);
@@ -578,7 +579,7 @@ footer .footer-center {
   .member_vertical_layout .text_col .member_title {
     margin-top: 14px;
     line-height: 1.5;
-    color: #b6c2c7 !important;
+    color: #ffffff !important;
     font-size: 16px; }
     @media (max-width: 959px) {
       .member_vertical_layout .text_col .member_title {
