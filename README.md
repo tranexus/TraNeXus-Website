@@ -1,2 +1,2 @@
-# TraNexus-Website
-The official website of the TraNexus Global organization.
+# TraNeXus-Website
+The official website of TraNeXus Global organization.
